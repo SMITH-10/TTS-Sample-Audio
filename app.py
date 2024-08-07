@@ -10,9 +10,9 @@ def list_audio_files(directory):
         st.error(f"The directory {directory} does not exist.")
         return []
     
-    # files = os.listdir(directory)
+    files = os.listdir(directory)
     # st.write(f"Files in directory {directory}: {files}")
-    # return [f for f in files if f.endswith('.mp3')]
+    return [f for f in files if f.endswith('.mp3')]
 
 # List all audio files in the directory
 audio_files = list_audio_files(audio_directory)
