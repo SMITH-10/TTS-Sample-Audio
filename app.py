@@ -1,6 +1,9 @@
 import streamlit as st
 import os
 
+# Set page configuration
+st.set_page_config(page_title="Audio Samples", layout="wide")
+
 # Directory containing audio files (relative path)
 audio_directory = "."
 
@@ -27,7 +30,3 @@ st.write(f"Current working directory: {os.getcwd()}")
 for audio_file in audio_files:
     st.text(audio_file.replace('.mp3', ''))
     st.audio(os.path.join(audio_directory, audio_file), format="audio/mp3")
-
-# Run the Streamlit application
-if __name__ == "__main__":
-    st.set_page_config(page_title="Audio Samples", layout="wide")
