@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 # Directory containing audio files
-audio_directory = "E:/TTS"
+audio_directory = "E:\TTS\TTS-Sample-Audio"
 
 # Function to list all generated audio files
 def list_audio_files(directory):
